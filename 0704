@@ -1,0 +1,46 @@
+import random
+
+class action : 
+    
+    def __init__(self):
+        self.fraud =[]
+        
+    def UserInput():
+        print("출금")
+        print("="*30)
+        input("카드/통장 삽입")
+    
+    def user_account(user):
+        print( user+ "삽입. 사기거래 확인")
+        for i in range(10):
+            self.fraud.append(random.randint(1000,9999))
+            
+        
+        
+    def input_password(user):
+        print("비밀번호를 입력하세요 : ")
+        
+        
+        while(True):
+            print("Select Menu")
+            print("="*30)
+            print("1.전액현금")
+            print("2.전액수표")
+            print("3.현금+수표")
+            print("4.취소")
+            sel = input("==>")
+
+            if sel =="1":
+                print("전액현금" +  +"출금됩니다.")
+                cash()
+            elif sel == "2":
+                print("전액수표"+  + "출금됩니다.")
+                check()
+            elif sel == "3":
+                print("현금"+ +","+"수표"+ " " + "출급됩니다.")
+                money()
+            elif sel == "4":
+                break
+            else:
+                print("다시 선택해주십시오")
+                print()
